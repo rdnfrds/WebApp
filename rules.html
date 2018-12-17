@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+
+      * {
+          box-sizing: border-box;
+      }
+
+      body {
+          margin: 0;
+          font-size: 15px;
+          font-family:sans-serif;
+      }
+
+
+
+      /* The grid: Three equal columns that floats next to each other */
+      .column {
+          float: left;
+          width: 33.33%;
+          padding: 50px;
+          text-align: center;
+          font-size: 20px;
+          cursor: pointer;
+          color: white;
+      }
+
+      .containerTab {
+          padding: 20px;
+          color: white;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+          content: "";
+          display: table;
+          clear: both;
+      }
+
+
+      /* Closable button inside the container tab */
+      .closebtn {
+          float: right;
+          color: white;
+          font-size: 20px;
+          cursor: pointer;
+      }
+</style>
+  </head>
+  <body>
+    <div>
+      <div class="header">
+        <div class="basketball-image">
+          <div class="basketball-image2">
+      <h1>Basketball</h1>
+      <h4>-Everything that you need to know-</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="rules.html">Rules</a></li>
+      <li><a href="position.html">Position</a></li>
+      <li><a href="tips.html">Tips and Advice</a></li>
+      <li><a href="malaysianteam.html">Malaysian Team</a></li>
+    </ul>
+
+    <br></br>
+    <br></br>
+        <!-- Three columns -->
+    <div class="row">
+      <div class="column" onclick="openTab('b1');" style="background:#ff6600;">Rules </div>
+      <div class="column" onclick="openTab('b2');" style="background:black;">Foul </div>
+      <div class="column" onclick="openTab('b3');" style="background:#ff6600;">Violations </div>
+    </div>
+
+    <div id="b1" class="containerTab" style="display:none;background:#ff6600">
+      <!-- If you want the ability to close the container, add a close button -->
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <p>Basketball is a team sport. Two teams of five players each try to score by shooting a ball through a hoop elevated 10 feet above the ground. The game is played on a rectangular floor called the court, and there is a hoop at each end. The court is divided into two main sections by the mid-court line. If the offensive team puts the ball into play behind the mid-court line, it has ten seconds to get the ball over the mid-court line. If it doesn't, then the defense gets the ball. Once the offensive team gets the ball over the mid-court line, it can no longer have possession of the ball in the area in back of the line. If it does, the defense is awarded the ball. </p>
+        <img src="https://www.breakthroughbasketball.com/basics/graphics/court.gif">
+        <p>The ball is moved down the court toward the basket by passing or dribbling. The team with the ball is called the offense. The team without the ball is called the defense. They try to steal the ball, contest shots, steal and deflect passes, and garner rebounds.
+
+        When a team makes a basket, they score two points and the ball goes to the other team. If a basket, or field goal, is made outside of the three-point arc, then that basket is worth three points. A free throw is worth one point. Free throws are awarded to a team according to some formats involving the number of fouls committed in a half and/or the type of foul committed. Fouling a shooter always results in two or three free throws being awarded the shooter, depending upon where he was when he shot.
+        <br></br>If he was beyond the three-point line, then he gets three shots. Other types of fouls do not result in free throws being awarded until a certain number have accumulated during a half. Once that number is reached, then the player who was fouled is awarded a '1-and-1' opportunity. If he makes his first free throw, he gets to attempt a second. If he misses the first shot, the ball is live on the rebound.
+
+        <br></br>Each game is divided into sections. All levels have two halves. In college, each half is twenty minutes long. In high school and below, the halves are divided into eight (and sometimes, six) minute quarters. In the pros, quarters are twelve minutes long. There is a gap of several minutes between halves. Gaps between quarters are relatively short. If the score is tied at the end of regulation, then overtime periods of various lengths are played until a winner emerges.
+
+        <br></br>Each team is assigned a basket or goal to defend. This means that the other basket is their scoring basket. At halftime, the teams switch goals. The game begins with one player from either team at center court. A referee will toss the ball up between the two. The player that gets his hands on the ball will tip it to a teammate. This is called a tip-off. In addition to stealing the ball from an opposing player, there are other ways for a team to get the ball.
+
+        One such way is if the other team commits a foul or violation.</p>
+
+      </div>
+
+      <div id="b2" class="containerTab" style="display:none;background:black">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <p>Personal fouls: Personal fouls include any type of illegal physical contact.
+
+          <strong>
+          <br></br>  • Hitting
+          <br></br> • Pushing
+          <br></br> • Slapping
+          <br></br> • Holding
+          <br></br> • Illegal pick/screen</strong>
+          -- when an offensive player is moving. When an offensive player sticks out a limb and makes physical contact with a defender in an attempt to block the path of the defender.
+
+          <br></br> Personal foul penalties: If a player is shooting while a being fouled, then he gets two free throws if his shot doesn't go in, but only one free throw if his shot does go in.
+
+          <br></br> • Three free throws are awarded if the player is fouled while shooting for a three-point goal and they miss their shot. If a player is fouled while shooting a three-point shot and makes it anyway, he is awarded one free throw. Thus, he could score four points on the play.
+
+          <br></br> • Inbounds. If fouled while not shooting, the ball is given to the team the foul was committed upon. They get the ball at the nearest side or baseline, out of bounds, and have 5 seconds to pass the ball onto the court.
+
+          <br></br> • One & one. If the team committing the foul has seven or more fouls in the game, then the player who was fouled is awarded one free throw. If he makes his first shot, then he is awarded another free throw.
+
+          <br></br> • Ten or more fouls. If the team committing the foul has ten or more fouls, then the fouled player receives two free throws.
+
+          <br></br> <strong>Charging.</strong> An offensive foul that is committed when a player pushes or runs over a defensive player. The ball is given to the team that the foul was committed upon.
+
+          <br></br> <strong>Blocking.</strong> Blocking is illegal personal contact resulting from a defender not establishing position in time to prevent an opponent's drive to the basket.
+
+          <br></br> <strong>Flagrant foul.</strong> Violent contact with an opponent. This includes hitting, kicking, and punching. This type of foul results in free throws plus the offense retaining possession of the ball after the free throws.
+
+          <br></br> <strong>Intentional foul.</strong> When a player makes physical contact with another player with no reasonable effort to steal the ball. It is a judgment call for the officials.
+
+          <br></br> <strong>Technical foul.</strong> A player or a coach can commit this type of foul. It does not involve player contact or the ball but is instead about the 'manners' of the game. Foul language, obscenity, obscene gestures, and even arguing can be considered a technical foul, as can technical details regarding filling in the scorebook improperly or dunking during warm-ups. </p>
+      </div>
+
+      <div id="b3" class="containerTab" style="display:none;background:#ff6600">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+
+        <p><strong>Walking/Traveling.</strong> Taking more than 'a step and a half' without dribbling the ball is traveling. Moving your pivot foot once you've stopped dribbling is traveling.
+
+        <br></br> <strong>Carrying/palming.</strong> When a player dribbles the ball with his hand too far to the side of or, sometimes, even under the ball.
+
+        <br></br><strong>Double Dribble.</strong> Dribbling the ball with both hands on the ball at the same time or picking up the dribble and then dribbling again is a double dribble.
+
+        <br></br> <strong>Held ball.</strong> Occasionally, two or more opposing players will gain possession of the ball at the same time. In order to avoid a prolonged and/or violent tussle, the referee stops the action and awards the ball to one team or the other on a rotating basis.
+
+        <br></br> <strong>Goaltending.</strong> If a defensive player interferes with a shot while it's on the way down toward the basket, while it's on the way up toward the basket after having touched the backboard, or while it's in the cylinder above the rim, it's goaltending and the shot counts. If committed by an offensive player, it's a violation and the ball is awarded to the opposing team for a throw-in.
+
+        <br></br> <strong>Backcourt violation.</strong> Once the offense has brought the ball across the mid-court line, they cannot go back across the line during possession. If they do, the ball is awarded to the other team to pass inbounds.
+
+        <br></br> <strong>Time restrictions.</strong> A player passing the ball inbounds has five seconds to pass the ball. If he does not, then the ball is awarded to the other team. Other time restrictions include the rule that a player cannot have the ball for more than five seconds when being closely guarded and, in some states and levels, shot-clock restrictions requiring a team to attempt a shot within a given time frame.</p>
+      </div>
+
+    <script>
+      function openTab(tabName) {
+        var i, x;
+        x = document.getElementsByClassName("containerTab");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        document.getElementById(tabName).style.display = "block";
+      }
+      </script>
+  </body>
+</html>
