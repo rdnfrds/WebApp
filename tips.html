@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tips and Advice</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon type="image/png" href="ball.png" />
+    <style>
+
+  body{
+    background-color: black;
+  }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #ff6600;
+    }
+        div {
+          padding-top:3.5px;
+          padding-bottom:10px;
+        }
+
+        .wrapper{
+          margin: 50px;
+          font-weight: 400;
+          text-align: center;
+        }
+
+        h1 {
+          font-weight: lighter;
+          font-size: 70px;
+        }
+
+        button.accordion {
+          background: #ff6600;
+          color: white;
+          cursor: pointer;
+          border: 0px;
+          padding: 18px;
+          width: 80%;
+          text-align: left;
+          font-size: 18px;
+          transition: .4s;
+        }
+
+        button:focus{
+          outline: none;
+        }
+
+        button.accordion.active, button.accordion:hover {
+          background: #9B0A07;
+        }
+
+        div.panel {
+          padding: 0 18px;
+          color:  white;
+          max-height: 0;
+          overflow: hidden;
+          width: 67.45%;
+          margin: 0 auto;
+          transition: max-height .2s ease-out;
+        }
+        h2{
+          color: white;
+          text-align: center;
+        }
+
+
+      </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rules.html">Rules</a></li>
+      <li><a href="position.html">Position</a></li>
+      <li><a class="active" href="tips.html">Tips and Advice</a></li>
+      <li><a href="malaysianteam.html">Malaysian Team</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+    </ul>
+      <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+    <h2>How to Develop into a Great Shooter</h2>
+    <div class="wrapper">
+
+      <button class="accordion" type="button" style="text-align:center">STEP 1: DEVELOPING THE SHOOTING RELEASSE</button>
+      <div class="panel">
+
+        <p></p>
+        Most of you have seen this 1-hand shooting form drill. Even though
+        it is nothing new, don't dismiss the importance of this
+        foundational drill. This reinforces good technique of the
+        "release" portion of your shot.
+        <p></p>
+        For this progression, we focus on getting our feet about
+        shoulder width apart or slightly narrower.
+        <p></p>
+        You should be in a strong, balanced position.
+        <p></p>
+        Make sure to check your feet and develop consistency on
+        every shot. We prefer to slightly stagger our feet or
+        slightly turn them. The anatomy is different for every one. You need to find what works for you.
+        <p></p>
+        Next, make an L with your shooting arm.
+        <p></p>
+        Focus on pushing the ball up and out. Your elbow should finish
+        above your eyes.
+        <p></p>
+        Focus on pushing the ball through your fingers. Typically, you
+        should either finish with your index finger pointing at the hoop
+        or with your index/middle finger pointing at the hoop. Find what
+        works best for you.
+        <p></p>
+        When you properly shoot "up and out" and "push through your fingers",
+        you will get the proper backspin on the ball.
+        <p></p>
+      </div>
+
+      <button class="accordion" type="button" style="text-align:center">STEP 2: ADDING THE GUIDE HAND TOO THE SHOOTING RELEASE</button>
+      <div class="panel">
+
+<p></p>
+Next, we work on adding the guide hand to the shooting release.
+<p></p>
+Since athletes have a tendency to use their guide hand, we do
+not have guide hand touch the ball in this progression.
+<p></p>
+This is highly important because when you overuse the guide hand,
+a lot of players will miss to the right and the left. If you can
+eliminate shooting to the right or left, you will automatically
+make more shots.
+<p></p>
+<p></p>
+Emphasis Points
+<p></p>
+Guide hand near the side of the ball. Do not place guide hand in front or behind basketball.
+Fingers on guide hand pointing upwards.
+</div>
+
+<button class="accordion" type="button" style="text-align:center">STEP 3:SET TO GO</button>
+<div class="panel">
+<p></p>
+Keep guide hand still.
+<p></p>
+Do not touch the ball with the guide hand.
+<p></p>
+The shooter starts a few feet from the basket.
+<p></p>
+<p></p>
+In the set position, the player’s arm angle is approximately 90 degrees
+and the ball is positioned near the shoulder.
+<p></p>
+Once the shooter is ready, the player extends their legs and shoots
+at the same time in one fluid motion. The shot is like a free throw
+as there is little to no jump with this progression.
+<p></p>
+We will shoot 5 to 10 shots, then take a step back. We usually do this
+until we reach a step in front of the free throw line.
+<p></p>
+Also, make sure to take your time and do it right on every repetition.
+If you build a bad habit by being sloppy, it will take you ten times
+as long to fix the bad habit. So be smart and get in the right
+position prior for every shot.
+<p></p>
+<p></p>
+Emphasis Points
+<p></p>
+Start from shoulder on each shot.
+<p></p>
+Extend legs and shoot at the same time.
+<p></p>
+Keep ball close to shoulder.
+<p></p>
+One fluid motion - no pauses or hitches.
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+
+  var i;
+
+  for(i=0; i<acc.length; i++)
+  {
+    acc[i].onclick = function()
+    {
+      this.classList.toggle("active");
+
+      var panel = this.nextElementSibling;
+
+      if(panel.style.maxHeight)
+      {
+        panel.style.maxHeight = null;
+      }
+      else {
+        {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      }
+    }
+  }
+  // When the user scrolls down 50px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 20) {
+document.getElementById("topBtn").style.display = "block";
+} else {
+document.getElementById("topBtn").style.display = "none";
+}
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+</script>
+  </body>
+</html>
