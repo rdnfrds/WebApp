@@ -2,142 +2,203 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <link rel="icon type="image/png"  href="ball.png" />
     <title>Basketball</title>
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
-    <style>
+  <style>
 
-    body{
-      background-color: black;
-    }
+  .wrapper{
+    margin: 50px;
+    font-weight: 400;
+    text-align: center;
+  }
+/*  h1 {
+    font-weight: lighter;
+    font-size: 70px;
+  }*/
+  button.accordion {
+    background: #ff6600;
+    color: white;
+    cursor: pointer;
+    border: 0px;
+    padding: 18px;
+    width: 55%;
+    text-align: left;
+    font-size: 18px;
+    transition: .4s;
+  }
+  button:focus{
+    outline: none;
+  }
+  button.accordion.active, button.accordion:hover {
+    background: #9B0A07;
+  }
+  div.panel {
+    padding: 0 18px;
+    color:  white;
+    max-height: 0;
+    overflow: hidden;
+    width: 60%;
+    margin: 0 auto;
+    transition: max-height .2s ease-out;
+  }
+  h4 {
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+    font-style: italic;
+    font-weight: lighter;
+    text-shadow: 4px 4px 8px black;
+  }
 
-    .wrapper{
-      margin: 50px;
-      font-weight: 400;
-      text-align: center;
-    }
 
-    h1 {
-      font-weight: lighter;
-      font-size: 70px;
-    }
-
-    button.accordion {
-      background: #ff6600;
-      color: white;
-      cursor: pointer;
-      border: 0px;
-      padding: 18px;
-      width: 55%;
-      text-align: left;
-      font-size: 18px;
-      transition: .4s;
-    }
-
-    button:focus{
-      outline: none;
-    }
-
-    button.accordion.active, button.accordion:hover {
-      background: #9B0A07;
-    }
-
-    div.panel {
-      padding: 0 18px;
-      color:  white;
-      max-height: 0;
-      overflow: hidden;
-      width: 60%;
-      margin: 0 auto;
-      transition: max-height .2s ease-out;
-    }
-
-    </style>
-
+  </style>
   </head>
   <body>
-    <div>
-      <div class="header">
-        <div class="basketball-image">
-          <div class="basketball-image2">
-      <h1>Basketball</h1>
-      <h4>-Everything that you need to know-</h4>
-          </div>
-        </div>
-      </div>
+
+    <div class="header">
+      <h1>BASKETBALL</h1>
+      <h4>EVERYTHING YOU NEED TO KNOW</h4>
     </div>
+
     <ul>
-      <li><a class="active" href="home.html">Home</a></li>
-      <li><a href="rules.html" href="malaysianteam.html">Rules</a></li>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="rules.html">Rules</a></li>
       <li><a href="position.html">Position</a></li>
       <li><a href="tips.html">Tips and Advice</a></li>
       <li><a href="malaysianteam.html">Malaysian Team</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
     </ul>
 
-      <center><iframe width="800" height="415" src="https://www.youtube.com/embed/WaYAhkH2cJM?autoplay=1&cc_load_policy=1"
-      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-      </iframe></center>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
 
+    <div class="wrapper">
 
-      <div class="wrapper">
-
-        <button class="accordion" type="button" style="text-align:center">History </button>
-        <div class="panel">
-          <p>   The story of basketball began when 1891, the Canadian Physical Education teacher named James Naismith who worked at a school in Springfield, Mass., Had to create a new sport by order of the school principal to be an alternative to American Football and Baseball that if they practiced abroad and in winter it was impossible to practice (very cold and snow).
-            <br></br>It was then that he decided to create a sport that did not have physical contact because of possible injuries, especially being the wooden floor and that used the feet,He decided to hang two baskets of peaches to 3,05 meters from the ground (a measure that has never been changed to this day) and the game consisted of putting the ball into the opponent’s basket.
-            Startup logo created 13 main rules by which the game ruled.
-            Some changes were soon emerging as to cut the bottom of the basket so that one would not always have to interrupt the game when someone marked. The tables were implemented, which gave rise to rebounds, among other things.The game was very popular and in 1936 was already debuting as an Olympic modality. </p>
-        </div>
-
-        <button class="accordion" type="button" style="text-align:center">The Fist Basketball Game</button>
-        <div class="panel">
-        <p> <br></br>On December 21, 1891, James Naismith published rules for a new game using five basic ideas and thirteen rules. That day, he asked his class to play a match in the Armory Street court: 9 versus 9, using a soccer ball and two peach baskets. Frank Mahan, one of his students, wasn’t so happy. He just said: "Harrumph. Another new game".
-
-          <br></br>However, Naismith was the inventor of the new game. Someone proposed to call it "Naismith Game", but he suggested "We have a ball and a basket: why don’t we call it basketball?"The eighteen players were John G. Thompson, Eugene S. Libby, Edwin P. Ruggles, William R. Chase, T. Duncan Patton, Frank Mahan, Finlay G. MacDonald, William H. Davis and Lyman Archibald, who defeated George Weller, Wilbert Carey, Ernest Hildner, Raymond Kaighn, Genzabaro Ishikawa, Benjamin S. French, Franklin Barnes, George Day and Henry Gelan 1–0. The goal was scored by Chase.
-
-          <br></br>There were other differences between Naismith’s first idea and the game played today. The peach baskets were closed, and balls had to be retrieved manually, until a small hole was put in the bottom of the peach basket to poke the ball out using a stick. Only in 1906 were metal hoops, nets and backboards introduced. Moreover, earlier the soccer ball was replaced by a Spalding ball, similar to the one used today.
-
-
-      The first basketball court: Springfield College </p> </div>
-
-      <button class="accordion" type="button" style="text-align:center">About</button>
+      <button class="accordion" type="button" style="text-align:center">History</button>
       <div class="panel">
-        <p>        Basketball is a team sport in which two teams of five players, opposing one another on a rectangular court, compete with the primary objective of shooting a basketball (approximately 9.4 inches (24 cm) in diameter) through the defender's hoop (a basket 18 inches (46 cm) in diameter mounted 10 feet (3.048 m) high to a backboard at each end of the court) while preventing the opposing team from shooting through their own hoop. A field goal is worth two points, unless made from behind the three-point line, when it is worth three. After a foul, timed play stops and the player fouled or designated to shoot a technical foul is given one or more one-point free throws. The team with the most points at the end of the game wins, but if regulation play expires with the score tied, an additional period of play (overtime) is mandated.
-
-              <br></br>Players advance the ball by bouncing it while walking or running (dribbling) or by passing it to a teammate, both of which require considerable skill. On offense, players may use a variety of shots—the lay-up, the jump shot, or a dunk; on defense, they may steal the ball from a dribbler, intercept passes, or block shots; either offense or defense may collect a rebound, that is, a missed shot that bounces from rim or backboard. It is a violation to lift or drag one's pivot foot without dribbling the ball, to carry it, or to hold the ball with both hands then resume dribbling.
-
-              <br></br>The five players on a each side at a time fall into five positions player positions: the tallest player is usually the center, the tallest and strongest is the power forward, a slightly shorter but more agile big man is the small forward, and the shortest players or the best ball handlers are the shooting guard and the point guard, who implements the coach's game plan by managing the execution of offensive and defensive plays (player positioning). Informally, players may play three-on-three, two-on-two, and one-on-one.
-
-              <br></br>Invented in 1891 by Canadian-American gym teacher James Naismith in Springfield, Massachusetts, United States, basketball has evolved to become one of the world's most popular and widely viewed sports.The National Basketball Association (NBA) is the most significant professional basketball league in the world in terms of popularity, salaries, talent, and level of competition.Outside North America, the top clubs from national leagues qualify to continental championships such as the Euroleague and FIBA Americas League. The FIBA Basketball World Cup and Men's Olympic Basketball Tournament are the major international events of the sport and attract top national teams from around the world. Each continent hosts regional competitions for national teams, like EuroBasket and FIBA AmeriCup.
-
-              The FIBA Women's Basketball World Cup and Women's Olympic Basketball Tournament feature top national teams from continental championships. The main North American league is the WNBA (NCAA Women's Division I Basketball Championship is also popular), whereas strongest European clubs participate in the EuroLeague Women. </p>
-
+        <p>   The story of basketball began when 1891, the Canadian Physical Education teacher named James Naismith who worked at a school in Springfield, Mass., Had to create a new sport by order of the school principal to be an alternative to American Football and Baseball that if they practiced abroad and in winter it was impossible to practice (very cold and snow).
+          <br></br>It was then that he decided to create a sport that did not have physical contact because of possible injuries, especially being the wooden floor and that used the feet,He decided to hang two baskets of peaches to 3,05 meters from the ground (a measure that has never been changed to this day) and the game consisted of putting the ball into the opponent’s basket.
+          Startup logo created 13 main rules by which the game ruled.
+          Some changes were soon emerging as to cut the bottom of the basket so that one would not always have to interrupt the game when someone marked. The tables were implemented, which gave rise to rebounds, among other things.The game was very popular and in 1936 was already debuting as an Olympic modality. </p>
       </div>
-      <script>
-      var acc = document.getElementsByClassName("accordion");
 
-        var i;
+      <button class="accordion" type="button" style="text-align:center">The First Basketball Game</button>
+      <div class="panel">
+      <p> <br></br>On December 21, 1891, James Naismith published rules for a new game using five basic ideas and thirteen rules. That day, he asked his class to play a match in the Armory Street court: 9 versus 9, using a soccer ball and two peach baskets. Frank Mahan, one of his students, wasn’t so happy. He just said: "Harrumph. Another new game".
 
-        for(i=0; i<acc.length; i++)
+        <br></br>However, Naismith was the inventor of the new game. Someone proposed to call it "Naismith Game", but he suggested "We have a ball and a basket: why don’t we call it basketball?"The eighteen players were John G. Thompson, Eugene S. Libby, Edwin P. Ruggles, William R. Chase, T. Duncan Patton, Frank Mahan, Finlay G. MacDonald, William H. Davis and Lyman Archibald, who defeated George Weller, Wilbert Carey, Ernest Hildner, Raymond Kaighn, Genzabaro Ishikawa, Benjamin S. French, Franklin Barnes, George Day and Henry Gelan 1–0. The goal was scored by Chase.
+
+        <br></br>There were other differences between Naismith’s first idea and the game played today. The peach baskets were closed, and balls had to be retrieved manually, until a small hole was put in the bottom of the peach basket to poke the ball out using a stick. Only in 1906 were metal hoops, nets and backboards introduced. Moreover, earlier the soccer ball was replaced by a Spalding ball, similar to the one used today.
+
+
+    The first basketball court: Springfield College </p> </div>
+
+    <button class="accordion" type="button" style="text-align:center">What is Basketball?</button>
+    <div class="panel">
+      <p>        Basketball is a team sport in which two teams of five players, opposing one another on a rectangular court, compete with the primary objective of shooting a basketball (approximately 9.4 inches (24 cm) in diameter) through the defender's hoop (a basket 18 inches (46 cm) in diameter mounted 10 feet (3.048 m) high to a backboard at each end of the court) while preventing the opposing team from shooting through their own hoop. A field goal is worth two points, unless made from behind the three-point line, when it is worth three. After a foul, timed play stops and the player fouled or designated to shoot a technical foul is given one or more one-point free throws. The team with the most points at the end of the game wins, but if regulation play expires with the score tied, an additional period of play (overtime) is mandated.
+
+            <br></br>Players advance the ball by bouncing it while walking or running (dribbling) or by passing it to a teammate, both of which require considerable skill. On offense, players may use a variety of shots—the lay-up, the jump shot, or a dunk; on defense, they may steal the ball from a dribbler, intercept passes, or block shots; either offense or defense may collect a rebound, that is, a missed shot that bounces from rim or backboard. It is a violation to lift or drag one's pivot foot without dribbling the ball, to carry it, or to hold the ball with both hands then resume dribbling.
+
+            <br></br>The five players on a each side at a time fall into five positions player positions: the tallest player is usually the center, the tallest and strongest is the power forward, a slightly shorter but more agile big man is the small forward, and the shortest players or the best ball handlers are the shooting guard and the point guard, who implements the coach's game plan by managing the execution of offensive and defensive plays (player positioning). Informally, players may play three-on-three, two-on-two, and one-on-one.
+
+            <br></br>Invented in 1891 by Canadian-American gym teacher James Naismith in Springfield, Massachusetts, United States, basketball has evolved to become one of the world's most popular and widely viewed sports.The National Basketball Association (NBA) is the most significant professional basketball league in the world in terms of popularity, salaries, talent, and level of competition.Outside North America, the top clubs from national leagues qualify to continental championships such as the Euroleague and FIBA Americas League. The FIBA Basketball World Cup and Men's Olympic Basketball Tournament are the major international events of the sport and attract top national teams from around the world. Each continent hosts regional competitions for national teams, like EuroBasket and FIBA AmeriCup.
+
+            The FIBA Women's Basketball World Cup and Women's Olympic Basketball Tournament feature top national teams from continental championships. The main North American league is the WNBA (NCAA Women's Division I Basketball Championship is also popular), whereas strongest European clubs participate in the EuroLeague Women. </p>
+
+    </div>
+
+    <button class="accordion" type="button" style="text-align:center">MABA?</button>
+    <div class="panel">
+      <p>Malaysian Basketball Association (MABA) is the forefront for Basketball sport in Malaysia. MABA is located at the centre of Kuala Lumpur, Jln Hang Jebat.
+
+<br></br>The past and present of Malaysian Basketball can be seen on Jalan Hang Jebat leading to the historical Merdeka Stadium. Here lies the two proudest achievements of the Malaysia Basketball Association (MABA), namely MABA House and MABA-DBKL Stadium. Fittingly, here is the home of Malaysian Basketball, its headquarters, a permanent training place for the national teams and also the residence of national players. The renowned and quaint 12-story MABA House which took shape in May 1971, was the creation and dream of The Late Tan Sri Khaw Khai Boh, then the Minister of Housing & Development.
+<br></br>Today, MABA House is run by a team of full-time staff, provides a hostel for officials and players, houses office premises, the MABA Secretariat and Conference room. In early 1995, The Malaysia Basketball Association (MABA) finally saw their dream of having a stadium of their own come true. Built at a cost of RM13.5 million, the MABA-DBKL stadium as it is called, owes much to the foresight and leadership of MABA Presidents like Dato' Chan Ah Chye and Dato' Loke Yuen Yow. The stadium has facilities such as a world class basketball court, modern gymnasium, Chinese Restaurant, multi-story car park and a roof top training court.</p>
+    </div>
+
+    <button class="accordion" type="button" style="text-align:center">History of MABA</button>
+    <div class="panel">
+      <p>Basketball was first introduced into the Chinese schools in Malaysia in the early 20th century by teachers who came from China. The game was mostly played on outdoor gravel courts. Later, it spread to the Chinese Sports Clubs, and in the early 1930's, the enthusiasm was aroused by the visits of University and Club teams from China and Hong Kong. Since then, the game has become one of the most popular sports among the Chinese communities in Malaysia. In 1934 Inter State Tournament for Malayan Chinese was organised.
+
+<br></br>Official basketball rule books printed in Chinese were imported from Shanghai long before the war. These were superseded in 1956 when the FIBA version of the rules was printed locally in Chinese and English. In 1958 the national body for basketball, the Malaya Amateur Basketball Association, was formally established and Mr. Quek Kai Dong was elected the first President. The first annual national championship meet, the Agong Cup Championship was launched in August of the year. The organization was later re-named Malaysia Amateur Basketball Association (MABA) to bring within its fold the states of Singapore, Sabah and Sarawak, on the formation of Malaysia. In April 1965, the first Malaysian Youth Basketball Championship was launched in Penang. MABA is now composed of sixteen affiliated members, including thirteen State Associations, Federal Territory and two groups members : the Malaysia Armed Forces and the Royal Police.
+
+<br></br>MABA became a member of FIBA in 1957.
+
+<br></br>As one of the founders of the Asian Basketball Confederation in 1960, MABA has been a strong supporter of regional and international basketball championship meets, having participated in most of the ABC sponsored Asian Championships since their inception. In 1979 our Women's team took part in the XIIIth World Championship for Women we were placed eleventh, ahead of Senegal. The Men's National team took part in the Xth World Championship in Spain in 1986. We failed to qualify for the second round.
+
+<br></br>In the SEAP and SEA Games both Men and Women's team have done well. Our women's team has been five times gold medalist from 1977 - 1985.
+
+<br></br>MABA organised the 3rd, 9th, 13th Asian BAsketball Championships for Men in 1965, 1977, and 1986 respectively in Kuala Lumpur. Malaysia also host 3rd, 7th and 11th Asian Basketball Championship for Women in 1970, 1978 and 1986 respectively. The 2nd World Interclub Qualifying Round 1984 was held in Ipoh, Perak, Malaysia. We were really honoured to be given the task by FIBA to organise the Pre-Olympic Championship for Women from 5 to 19 June 1988 and also the 11th World Basketball Championship for Women from 12 to 22 July 1990 and both the championships were successfully completed. In 1989 we also hosted the SEA Games (Basketball) and our men's national team won the gold after 10 years while the womens' team won the silver. MABA hosted the 4th Commonwealth Games for Men and Women, Kuala Lumpur, Sungai Petani, Kedah from 17 - 24 July 1995 and also the first South East Asia Basketball Association (SEABA) Mens Championship in Segamat, Johore from 10th - 16th April 1994. Malaysia won the Inaugural SEABA Men's Championship.
+
+<br></br>Following the official introduction of the game of mini-basketball by FIBA after a decision taken at the Mexico Congress in 1968, the MABA took the initiative of translating the official rules into the Chinese and Malayan languages. It then reproduced 10,000 copies in three languages ( English, Chinese and Malay) for extensive distribution to ABC member organizations and all the primary schools throughout Malaysia. The first mini-basket championship was held in Malaysia at the end of 1970. The inauguration of this championship complete the three-phase promotion of basketball activities with organised development and competition at primary immediate, and advanced levels. The policy and programmes of the MABA Executive Council are implemented by nine committees, i.e. international and Invitational, finance, technical, women's basketball, youth basketball, technical aid, referees' and coaches' committeess. In collaboration with the ABC and assisted by the FIBA, MABA organised the Asian Seminar for Referees and Coaches in Kuala Lumpur in April 1970. The Seminar, conducted by R.W Jones, Secretary-General of FIBA was attended by ninety-eight perticipants from Chinese Taipei, Hong Kong, India, Indonesia, Japan, New Zealand, the Philippines, Singapore and Malaysia. Since 1972, Coaches' and Referees' Cinics have been regularly held at West and East Malaysia through the financial assistance of the Ministry of Culture, Youth and sports. National sports Council Council and International Olympic Council. To date hundreds of coaches and referees from various part of the country have undergone such training.
+
+<br></br>In 1975 the first advance basketball coaching course was conducted by three top American coaches : Coach Bobby Knight, Coach Bon Boyd and Coach Ellenburger. Another advance coaching course was held in 1984. From then on the coaches committee never look back as far as training coaches is concerned. Three coaches, Wee Cheong Phor, Tan See Wah and Yeoh Choo Hock were sent to Rome to attend the first International Olympic Solidarity Basketball Coaching course for two months in October and November 1977. MABA was given the honour to host the Regional IOC Basketball Coaching Course in 1984 and 1987. The experts for the 1984 course were Coach Herd Livesay and Coach Jay Hillock from USA and the 1987 were Coach Terry Schofied (USA) and Burna Arrigoni ( Italy ).
+
+<br></br>IOC Coaching Clinic was organised from 12 - 21 October 1992. Experts are Mr. Jim Calvin and Mr. Stephen Barr of Australia.
+
+<br></br>Dato' Yeoh Choo Hock, Secretary-General, MABA was appointed by IOC as expert for conducting coaching course in Vientiane, Laos and Phnom Phen, Combodia in 1993. Dato' Yeoh Choo Hock, Secretary General of MABA was appointed by the Secretary General, FIBA as an Ex-officio in the World Basketball Technical Committee in 1990.
+
+<br></br>MABA has 33 FIBA Referees and 450 MABA Referees. The referee committee has been organising clinics to keep up with the changes of the rules.
+
+<br></br>In order to encourage players of other communities apart from Chinese to take on active part in basketball, the first non Chinese Championship was launched in Kuala Lumpur in December 1973. But sad to say that due to poor response the competition lasted only until 1975. In 1995 the revival of the non-chinese tournament known as National Basketball Championship 'Sedap Cup' saw 13 teams from 10 states taking part. The National Youth Cup Championship and the National Agung Cup Championship in April and July / August respective has been the two most important events in MABA Calendar every year. Besides these two major events MABA League was introduces in 1984 and 1985. Due to financial constrained faced by all the teams it was temporary discontinued.
+
+<br></br>In order to have permanent headquaters of its own. MABA has launched its long cherished plan of constructing a twelve storey building. The project, completed in May 1971, provides hostel accommodations for officials and players, a canteen, library and conference hall for the basketball fraternities, as well as a venue for clinics and training seminars.
+
+<br></br>The 12 storey MABA headquaters is an imposing landmark in the heart of the busy city of Kuala Lumpur, the capital of Malaysia. Its establishment in 1970 was mainly to the efforts of the late Tan Sri Khaw Kai Boh, a former president of MABA and the Asian Basketball Confederation (ABC) and former vice-president of the world body FIBA.
+
+<br></br>The building also houses the secretariat of the Asian Basketball Confederation The Late Mr. Lum Mun Chak was Secretary General of the ABC from 1983-1991 and Mr. Yeoh Choo Hock was his Technical Assistant.
+
+<br></br>MABA House is a symbol of the progress and development of the game of basketball in Malaysia and also in the region.
+
+<br></br>The completion of the MABA / DBKL Basketball Stadium and the Multi-Storey Car park plus the basketball training court and two level domitories on top of the car park speaks well for the leadership of MABA. The stadium project consists of a basement which is rented out as a restaurant, a mezanine floor which has a medical room, two office rooms and an open space of about 5,000 sq.ft. which can be rented out for exhibition purposes. The top level of the stadium is the basketball court which is fully air-conditioned.
+
+<br></br>During the construction period Mr. Wong Chee Kooi, Mr. Lim Yew Jin and Mr. Yeoh Choo Hock were appointed to represent MABA in the Stadium Board Building Committee. Another 3 representative were from DBKL.
+
+<br></br>Today MABA stands tall with its own MABA Building, Basketball Stadium and Car Park.</p>
+    </div>
+
+    <center><iframe width="800" height="415" src="https://www.youtube.com/embed/WaYAhkH2cJM?autoplay=1&cc_load_policy=1"
+    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe></center>
+
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+      var i;
+      for(i=0; i<acc.length; i++)
+      {
+        acc[i].onclick = function()
         {
-          acc[i].onclick = function()
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if(panel.style.maxHeight)
           {
-            this.classList.toggle("active");
-
-            var panel = this.nextElementSibling;
-
-            if(panel.style.maxHeight)
+            panel.style.maxHeight = null;
+          }
+          else {
             {
-              panel.style.maxHeight = null;
-            }
-            else {
-              {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-              }
+              panel.style.maxHeight = panel.scrollHeight + "px";
             }
           }
         }
+      }
 
-      </script>
-  </body>
+      // When the user scrolls down 50px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 20) {
+    document.getElementById("topBtn").style.display = "block";
+  } else {
+    document.getElementById("topBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+    </script>
+</body>
 </html>
